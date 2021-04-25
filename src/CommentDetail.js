@@ -1,4 +1,5 @@
 import React from 'react';
+import Flag from './Flag';
 
 const CommentDetail = props => {
   return (
@@ -8,7 +9,7 @@ const CommentDetail = props => {
       </a>
       <div className="content">
         {/* TODO: Parametrizar bandera */}
-        <i className="france flag"></i>
+        <Flag nationalityCode={props.nationalityCode} />
         <a href="/" className="author">
           {props.author}
         </a>
